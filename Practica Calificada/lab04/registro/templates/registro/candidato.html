@@ -1,0 +1,12 @@
+<h1>Candidato - {{ candidato.nombre_cand }}</h1>
+
+<ul>
+    <li>Nombre: {{ candidato.nombre_cand }}</li>
+    <li>Apellido: {{ candidato.apellido_cand }}</li>
+    <li>Edad: {{ candidato.edad }}</li>
+    <li>Ocupacion: {{ candidato.ocupacion }}</li>
+</ul>
+
+<a href="{% url 'registro:index' %}">Volver</a>
+
+

@@ -1,0 +1,12 @@
+<h1>{{ region.nombre_region }}</h1>
+
+<ul>
+{% for candidato in region.candidato_set.all %}
+    <li>
+        <a href="/registro/candidato/{{ candidato.id }}/">{{ candidato.nombre_cand }}</a>
+    </li>
+    
+{% endfor %}
+</ul>
+
+<a href="{% url 'registro:index' %}">Volver</a>
